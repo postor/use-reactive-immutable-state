@@ -65,3 +65,15 @@ export function App () {
   );
 }
 ```
+
+**Notice**
+
+use assignment instead of array methods like push/unshift/splice/sort.....
+
+```
+      {/* good */}
+      <button style={btnStyle} onClick={() => state.todos = [...state.todos, { checked: false, text: 'new item' }]}>add</button>
+
+      {/* bad */}
+      <button style={btnStyle} onClick={() => state.todos.push({ checked: false, text: 'new item' })}>add</button>
+```
