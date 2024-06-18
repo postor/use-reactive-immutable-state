@@ -1,13 +1,14 @@
 {
   "name": "use-reactive-immutable-state",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simplify your React state management with automatic immutability and reactivity.  Effortlessly update complex data structures without worrying about performance or manual optimizations.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Josh Lin <postor@gmail.com> (https://postor.medium.com/)",
   "license": "ISC",
   "devDependencies": {
     "@testing-library/react-hooks": "^8.0.1",
@@ -17,5 +18,10 @@
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^29.1.5",
     "typescript": "^5.4.5"
+  },
+  "homepage": "https://github.com/postor/use-reactive-immutable-state#readme",
+  "bugs": {
+    "url": "https://github.com/postor/use-reactive-immutable-state/issues",
+    "email": "postor@gmail.com"
   }
 }

@@ -13,7 +13,7 @@ export function useReactiveImmutableState<T = NestedData>(defaultValue: T) {
   ref.current.onUpdate = data => _setState(data)
   const setState = useCallback((value: T) => {
     ref.current = new XProxy(value, undefined, (data) => _setState(data))
-    _setState(ref.current.data)
+    _setState(ref.current.proxy)
   }, [])
   return [state, setState] as [T, (v: T) => void]
 }
